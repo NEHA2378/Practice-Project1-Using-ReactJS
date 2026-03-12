@@ -155,6 +155,15 @@ export default function Header() {
                   </Link>
                 </li>
 
+                <li>
+                  <Link
+                    to={'/faq'}
+                    className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  >
+                    Accordion
+                  </Link>
+                </li>
+
                 <li className='flex gap-1'>
 
                   <button onClick={() => addData(13, 17)} className='bg-blue-500 rounded-[5px] p-2 cursor-pointer'>Add Data</button>

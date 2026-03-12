@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import Aboutus from './pages/About.jsx'
 import Cart from './pages/Cart.jsx'
 import Login from './pages/Login.jsx'
+import Accordion from './pages/Accordion.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -17,7 +18,8 @@ createRoot(document.getElementById('root')).render(
       <Route path='/about-us' element={<Aboutus/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/my-cart' element={<Cart/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/login' element={<Login/>}/>Accordion
+      <Route path='/faq' element={<Accordion/>}/>
     </Routes>
     </BrowserRouter>
   </StrictMode>,
