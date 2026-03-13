@@ -4,7 +4,7 @@ import Header from '../components/common/Header'
 export default function Aboutus() {
   return (
     <>
-    <Header/>
+    
     <section className='py-10'>
         <div className='max-w-[1320px] mx-auto'>
             <h1 className='font-bold text-center text-4xl py-5'>About Page</h1>

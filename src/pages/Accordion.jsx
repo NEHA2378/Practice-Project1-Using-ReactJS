@@ -9,7 +9,7 @@ export default function Accordion() {
 
     return (
         <div>
-            <Header />
+            
             <section className='py-10'>
                 <h1 className='text-4xl font-bold text-center'>Accordion</h1>
                 <div className='max-w-[1000px] m-auto mt-5'>
