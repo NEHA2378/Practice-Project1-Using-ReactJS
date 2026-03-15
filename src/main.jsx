@@ -9,21 +9,29 @@ import Cart from './pages/Cart.jsx'
 import Login from './pages/Login.jsx'
 import Accordion from './pages/Accordion.jsx'
 import Layout from './components/common/Layout.jsx'
+import Product from './pages/Product.jsx'
+import ProductDetails from './pages/ProductDetails.jsx'
+import Error404 from './pages/Error404.jsx'
+import UseEffectExample from './pages/UseEffectExample.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <BrowserRouter>
-    <Routes>
-      <Route element={<Layout/>}>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about-us' element={<Aboutus/>}/>
-      <Route path='/services' element={<Services/>}/>
-      <Route path='/my-cart' element={<Cart/>}/>
-      <Route path='/login' element={<Login/>}/>Accordion
-      <Route path='/faq' element={<Accordion/>}/>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/about-us' element={<Aboutus />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/my-cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/faq' element={<Accordion />} />
+          <Route path='/product' element={<Product />} />
+          <Route path='/product-details/:id' element={<ProductDetails />} />
+          <Route path='/use-effect' element={<UseEffectExample/>} />
+        </Route>
+        <Route path='*' element={<Error404/>}/>
+      </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  
 )
